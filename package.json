@@ -1,0 +1,37 @@
+{
+  "name": "element-theme-css-var",
+  "version": "1.0.0",
+  "description": "Element component chalk theme By css var.",
+  "main": "lib/index.css",
+  "style": "lib/index.css",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "node .build/gen-cssfile && gulp build --gulpfile ./gulpfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElementUI/theme-chalk.git"
+  },
+  "keywords": [
+    "element",
+    "theme",
+    "css",
+    "var"
+  ],
+  "author": "760720981@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ElementUI/theme-chalk/issues"
+  },
+  "homepage": "https://github.com/ElementUI/theme-chalk#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {}
+}
