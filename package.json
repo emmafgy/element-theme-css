@@ -1,7 +1,8 @@
 {
-  "name": "element-theme-css-var",
+  "private": false,
+  "name": "@emmafgy/element-theme-css",
   "version": "1.0.0",
-  "description": "Element component chalk theme By css var.",
+  "description": "原生css变量实现element-ui主题样式",
   "main": "lib/index.css",
   "style": "lib/index.css",
   "files": [
@@ -13,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElementUI/theme-chalk.git"
+    "url": "git+https://github.com/emmafgy/element2-theme-css-var.git"
   },
   "keywords": [
     "element",
@@ -24,9 +25,9 @@
   "author": "760720981@qq.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ElementUI/theme-chalk/issues"
+    "url": "https://github.com/emmafgy/element2-theme-css-var/issues"
   },
-  "homepage": "https://github.com/ElementUI/theme-chalk#readme",
+  "homepage": "https://github.com/emmafgy/element2-theme-css-var#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
