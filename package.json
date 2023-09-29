@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@emmafgy/element-theme-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "原生css变量实现element-ui主题样式",
   "main": "lib/index.css",
   "style": "lib/index.css",
