@@ -35,11 +35,11 @@
     }
 
     &[x-placement^="top"] {
-      margin-bottom: #{calc($--tooltip-arrow-size + 6px)};
+      margin-bottom: calc(#{$--tooltip-arrow-size} + 6px);
     }
 
     &[x-placement^="top"] .popper__arrow {
-      bottom: calc(0px - $--tooltip-arrow-size);
+      bottom: calc(0px - #{$--tooltip-arrow-size});
       border-top-color: $--tooltip-border-color;
       border-bottom-width: 0;
 
@@ -52,11 +52,11 @@
     }
 
     &[x-placement^="bottom"] {
-      margin-top: #{calc($--tooltip-arrow-size + 6px)};
+      margin-top: calc(#{$--tooltip-arrow-size} + 6px);
     }
 
     &[x-placement^="bottom"] .popper__arrow {
-      top: calc((0px - $--tooltip-arrow-size));
+      top: calc((0px - #{$--tooltip-arrow-size}));
       border-top-width: 0;
       border-bottom-color: $--tooltip-border-color;
 
@@ -69,11 +69,11 @@
     }
 
     &[x-placement^="right"] {
-      margin-left: #{calc($--tooltip-arrow-size + 6px)};
+      margin-left: calc(#{$--tooltip-arrow-size} + 6px);
     }
 
     &[x-placement^="right"] .popper__arrow {
-      left: calc(0px - $--tooltip-arrow-size);
+      left: calc(0px - #{$--tooltip-arrow-size});
       border-right-color: $--tooltip-border-color;
       border-left-width: 0;
 
@@ -86,11 +86,11 @@
     }
 
     &[x-placement^="left"] {
-      margin-right: #{calc($--tooltip-arrow-size + 6px)};
+      margin-right: calc(#{$--tooltip-arrow-size} + 6px);
     }
 
     &[x-placement^="left"] .popper__arrow {
-      right: calc(0px - $--tooltip-arrow-size);
+      right: calc(0px - #{$--tooltip-arrow-size});
       border-right-width: 0;
       border-left-color: $--tooltip-border-color;
 

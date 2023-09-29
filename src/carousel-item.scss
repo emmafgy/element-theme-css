@@ -10,10 +10,10 @@
     height: 100%;
     display: inline-block;
     overflow: hidden;
-    z-index: #{calc($--index-normal - 1)};
+    z-index: calc(#{$--index-normal} - 1);
 
     @include when(active) {
-      z-index: #{calc($--index-normal + 1)};
+      z-index: calc(#{$--index-normal} + 1);
     }
 
     @include when(animating) {
@@ -32,7 +32,7 @@
         }
       }
       &.is-active {
-        z-index: #{calc($--index-normal + 1)};
+        z-index: calc(#{$--index-normal} + 1);
       }
     }
   }

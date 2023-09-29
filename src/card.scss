@@ -22,7 +22,7 @@
   }
 
   @include e(header) {
-    padding: #{calc($--card-padding - 2px) $--card-padding};
+    padding: calc(#{$--card-padding} - 2px) $--card-padding;
     border-bottom: 1px solid $--card-border-color;
     border-bottom-color: $--card-border-color;
     box-sizing: border-box;

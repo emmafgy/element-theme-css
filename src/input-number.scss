@@ -6,15 +6,15 @@
   position: relative;
   display: inline-block;
   width: 180px;
-  line-height: #{calc($--input-height - 2px)};
+  line-height: calc(#{$--input-height} - 2px);
 
   .el-input {
     display: block;
 
     &__inner {
       -webkit-appearance: none;
-      padding-left: #{calc($--input-height + 10px)};
-      padding-right: #{calc($--input-height + 10px)};
+      padding-left: calc(#{$--input-height} + 10px);
+      padding-right: calc(#{$--input-height} + 10px);
       text-align: center;
     }
   }
@@ -71,7 +71,7 @@
 
   @include m(medium) {
     width: 200px;
-    line-height: #{calc($--input-medium-height - 2px)};
+    line-height: calc(#{$--input-medium-height} - 2px);
 
     @include e((increase, decrease)) {
       width: $--input-medium-height;
@@ -79,14 +79,14 @@
     }
 
     .el-input__inner {
-      padding-left: #{calc($--input-medium-height + 7px)};
-      padding-right: #{calc($--input-medium-height + 7px)};
+      padding-left: calc(#{$--input-medium-height} + 7px);
+      padding-right: calc(#{$--input-medium-height} + 7px);
     }
   }
 
   @include m(small) {
     width: 130px;
-    line-height: #{calc($--input-small-height - 2px)};
+    line-height: calc(#{$--input-small-height} - 2px);
 
     @include e((increase, decrease)) {
       width: $--input-small-height;
@@ -98,14 +98,14 @@
     }
 
     .el-input__inner {
-      padding-left: #{calc($--input-small-height + 7px)};
-      padding-right: #{calc($--input-small-height + 7px)};
+      padding-left: calc(#{$--input-small-height} + 7px);
+      padding-right: calc(#{$--input-small-height} + 7px);
     }
   }
 
   @include m(mini) {
     width: 130px;
-    line-height: #{calc($--input-mini-height - 2px)};
+    line-height: calc(#{$--input-mini-height} - 2px);
 
     @include e((increase, decrease)) {
       width: $--input-mini-height;
@@ -117,8 +117,8 @@
     }
 
     .el-input__inner {
-      padding-left: #{calc($--input-mini-height + 7px)};
-      padding-right: #{calc($--input-mini-height + 7px)};
+      padding-left: calc(#{$--input-mini-height} + 7px);
+      padding-right: calc(#{$--input-mini-height} + 7px);
     }
   }
 
@@ -132,12 +132,12 @@
   @include when(controls-right) {
     .el-input__inner {
       padding-left: 15px;
-      padding-right: #{calc($--input-height + 10px)};
+      padding-right: calc(#{$--input-height} + 10px);
     }
 
     @include e((increase, decrease)) {
       height: auto;
-      line-height: #{calc(($--input-height - 2px) / 2)};
+      line-height: calc((#{$--input-height} - 2px) / 2);
 
       [class*=el-icon] {
         transform: scale(.8);
@@ -161,19 +161,19 @@
 
     &[class*=medium] {
       [class*=increase], [class*=decrease] {
-        line-height: #{calc(($--input-medium-height - 2px) / 2)};
+        line-height: calc((#{$--input-medium-height} - 2px) / 2);
       }
     }
 
     &[class*=small] {
       [class*=increase], [class*=decrease] {
-        line-height: #{calc(($--input-small-height - 2px) / 2)};
+        line-height: calc((#{$--input-medium-height} - 2px) / 2);
       }
     }
 
     &[class*=mini] {
       [class*=increase], [class*=decrease] {
-        line-height: #{calc(($--input-mini-height - 2px) / 2)};
+        line-height: calc((#{$--input-medium-height} - 2px) / 2);
       }
     }
   }

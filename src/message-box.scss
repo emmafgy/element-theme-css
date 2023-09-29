@@ -188,7 +188,7 @@
     }
 
     @include e(content) {
-      $padding-horizontal: calc($--msgbox-padding-primary + 12px);
+      $padding-horizontal: calc(#{$--msgbox-padding-primary} + 12px);
 
       padding-left: $padding-horizontal;
       padding-right: $padding-horizontal;

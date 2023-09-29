@@ -735,7 +735,7 @@ $--button-medium-padding-horizontal: var(
 $--button-small-font-size: var(--button-small-font-size, 12px);
 $--button-small-border-radius: var(
   --button-small-border-radius,
-  calc($--border-radius-base - 1px)
+  calc(#{$--border-radius-base }- 1px)
 );
 $--button-small-padding-vertical: var(--button-small-padding-vertical, 9px);
 $--button-small-padding-horizontal: var(
@@ -745,7 +745,7 @@ $--button-small-padding-horizontal: var(
 $--button-mini-font-size: var(--button-mini-font-size, 12px);
 $--button-mini-border-radius: var(
   --button-mini-border-radius,
-  calc($--border-radius-base - 1px)
+  calc(#{$--border-radius-base} - 1px)
 );
 $--button-mini-padding-vertical: var(--button-mini-padding-vertical, 7px);
 $--button-mini-padding-horizontal: var(--button-mini-padding-horizontal, 15px);
@@ -1183,7 +1183,7 @@ $--lg: var(--lg, 1200px);
 $--xl: var(--xl, 1920px);
 
 $--breakpoints: (
-  'xs' : (max-width: calc($--sm - 1px)),
+  'xs' : (max-width: calc(#{$--sm} - 1px)),
   'sm' : (min-width: $--sm),
   'md' : (min-width: $--md),
   'lg' : (min-width: $--lg),
@@ -1191,15 +1191,15 @@ $--breakpoints: (
 );
 
 $--breakpoints-spec: (
-  'xs-only' : (max-width: calc($--sm - 1px)),
+  'xs-only' : (max-width: calc(#{$--sm} - 1px)),
   'sm-and-up' : (min-width: $--sm),
-  'sm-only': "(min-width: #{$--sm}) and (max-width: #{calc($--md - 1px)})",
-  'sm-and-down': (max-width: calc($--md - 1px)),
+  'sm-only': "(min-width: #{$--sm}) and (max-width: calc(#{$--md} - 1px))",
+  'sm-and-down': (max-width: calc(#{$--md} - 1px)),
   'md-and-up' : (min-width: $--md),
-  'md-only': "(min-width: #{$--md}) and (max-width: #{calc($--lg - 1px)})",
-  'md-and-down': (max-width: calc($--lg - 1px)),
+  'md-only': "(min-width: #{$--md}) and (max-width: calc(#{$--lg }- 1px))",
+  'md-and-down': (max-width: calc(#{$--lg} - 1px)),
   'lg-and-up' : (min-width: $--lg),
-  'lg-only': "(min-width: #{$--lg}) and (max-width: #{calc($--xl - 1px)})",
-  'lg-and-down': (max-width: calc($--xl - 1px)),
+  'lg-only': "(min-width: #{$--lg}) and (max-width: calc(#{$--xl} - 1px))",
+  'lg-and-down': (max-width: calc(#{$--xl} - 1px)),
   'xl-only' : (min-width: $--xl),
 );

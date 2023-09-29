@@ -36,15 +36,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: #{calc($--font-size-base + 6px)};
+  font-size: calc(#{$--font-size-base} + 6px);
 }
 
 h2 {
-  font-size: #{calc($--font-size-base + 4px)};
+  font-size: calc(#{$--font-size-base} + 4px);
 }
 
 h3 {
-  font-size: #{calc($--font-size-base + 2px)};
+  font-size: calc(#{$--font-size-base} + 2px);
 }
 
 h4, h5, h6, p {
@@ -64,11 +64,11 @@ p {
 }
 
 sup, sub {
-  font-size: #{calc($--font-size-base - 1px)};
+  font-size: calc(#{$--font-size-base} - 1px);
 }
 
 small {
-  font-size: #{calc($--font-size-base - 2px)};
+  font-size: calc(#{$--font-size-base} - 2px);
 }
 
 hr {

@@ -64,7 +64,7 @@
   }
 
   @include e(body) {
-    padding: calc($--dialog-padding-primary + 10px) $--dialog-padding-primary;
+    padding: calc(#{$--dialog-padding-primary} + 10px) $--dialog-padding-primary;
     color: $--color-text-regular;
     font-size: $--dialog-content-font-size;
     word-break: break-all;
@@ -83,7 +83,7 @@
 
     @include e(body) {
       text-align: initial;
-      padding: 25px calc($--dialog-padding-primary + 5px) 30px;
+      padding: 25px calc(#{$--dialog-padding-primary} + 5px) 30px;
     }
 
     @include e(footer) {

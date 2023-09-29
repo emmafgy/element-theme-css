@@ -66,7 +66,7 @@
 
   @include when(disabled) {
     .el-cascader__label {
-      z-index: #{calc($--index-normal + 1)};
+      z-index: calc(#{$--index-normal} + 1);
       color: $--disabled-color-base;
     }
   }
